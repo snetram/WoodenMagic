@@ -1,5 +1,6 @@
 package snetram.woodenmagic.common;
 
+import snetram.woodenmagic.common.block.ModBlocks;
 import snetram.woodenmagic.common.core.proxy.CommonProxy;
 import snetram.woodenmagic.common.init.init;
 import snetram.woodenmagic.common.init.postinit;
@@ -23,6 +24,7 @@ public class woodenmagic {
 	public static final String COMMONPROXYLOCATION = "snetram.woodenmagic.common.core.proxy.CommonProxy";
 
 	public static void preInit(FMLPreInitializationEvent event) {
+		ModBlocks.init();
 		preinit.preInit();
 	}
 
@@ -34,3 +36,5 @@ public class woodenmagic {
 		postinit.postInit();
 	}
 }
+
+
